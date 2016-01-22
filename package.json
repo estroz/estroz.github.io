@@ -1,0 +1,33 @@
+{
+  "name": "estroz.github.io",
+  "version": "0.0.1",
+  "description": "WebPort",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodejs server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "web",
+    "portfolio"
+  ],
+  "author": "Eric Stroczynski",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": ""
+  },
+  "dependencies": {
+    "express": "~4.13.3",
+    "angular": "~1.4.9",
+    "angular-resource": "~1.4.9",
+    "body-parser": "~1.14.2",
+    "mongoose": "~4.3.6",
+    "node-restful": "~0.2.5",
+    "method-override": "~2.3.5",
+    "lodash": "~4.0.0"
+  }
+}

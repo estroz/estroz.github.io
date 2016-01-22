@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Web Portfolio</title>
+        <meta name="description" content="A web portfolio personalized for web development projects">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Eric Stroczynski's Web Portfolio</h1>
+        
+        <!-- Projects view-->
+        
+        <div ng-controller="projectsController">
+            <h2>There are {{projects.length}} projects in my portfolio</h2>
+            <ul>
+                <li ng-repeat="project in projects">
+                    {{project.name}}
+                </li>
+            </ul>
+            <form ng-submit="createProject()">
+                <input type="text" placeholder="Project Name" ng-model="projectName"></input>
+            <button type="submit">Add Project</button>
+            </form>
+        </div>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="/client/js/app.js"></script>
+    <script type="text/javascript" src="/client/js/controllers/projects-controller.js"></script>
+    </body>
+</html>
