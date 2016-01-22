@@ -7,8 +7,6 @@ projectApp.controller('projectsController', ['$scope', '$resource', function($sc
         $scope.projects = results;
     });
     
-    $scope.projects = []
-    
     $scope.createProject = function(){
         var project = new Project();
         project.name = $scope.projectName;
