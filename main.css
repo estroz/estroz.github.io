@@ -8,7 +8,7 @@ html {
 body {
     margin: 0 auto;
     padding: 2em 2em 4em;
-    max-width: 800px;
+    max-width: 65%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222;
     font-weight: 600;
     line-height: 1.3em;
+    text-align: center;
 }
 
 h2 {
@@ -40,30 +41,43 @@ samp {
 }
 
 img {
-    -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
     border: 10px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    display: inline;
+    margin: 1.2em auto;
+    max-width: 400px;
+    max-height: 330px;
+}
+
+#profilepicture {
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: table-cell;
+    margin: 1.2em auto;
+    max-width: 275px;
+    max-height: 250px;
+}
+
+figcaption {
+    font-weight: 600;
+    position: inherit;
+}
+
+
+#projectfigure {
     display: block;
-    margin: 1.3em auto;
-    max-width: 95%;
 }
 
-@-webkit-keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-    }
-    100% {
-        -webkit-filter: grayscale(0%);
-    }
+#figcaption {
+    text-align: center;
 }
 
-@keyframes colorize {
-    0% {
-        filter: grayscale(100%);
-    }
-    100% {
-        filter: grayscale(0%);
-    }
+
+
+.fig {
+    display: inline-block;
+    padding-right: 24px;
+    
 }

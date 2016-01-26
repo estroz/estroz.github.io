@@ -16,34 +16,31 @@
         <!-- Profile Image and Description -->
         
         <div>
-            <a id="profile" href="/profile.jpg"></a>
-            <h3>Eric Stroczynski</h3>
-            <p>I'm a Computer Science student previously a Microbiologist. I've worked with complex data throughout my undergraduate career in life science, thus bringing derived concepts into the development of pragmatic applications was the next natural step. My current objectives are <srong>integrating data-driven insights into application design</srong>, and developing knowledge of <strong>networked application back-end</strong>. My projects have mainly focused around assessing transcriptomic data in R using a Linux environment, but now my time is devoted to web development.</p>
+            <img id="profilepicture" src="images/profile.jpg" alt="prof pic">
+            <h3 id="name">Eric Stroczynski</h3>
+            <hr>
+            <p>I'm a Computer Science student previously a Microbiologist. I've worked with complex data throughout my undergraduate career in life science, thus bringing derived concepts into the development of pragmatic applications was the next natural step. My current objectives are integrating data-driven insights into application design, and developing knowledge of networked application back-end. My projects have mainly focused around assessing transcriptomic data in R using a Linux environment, but now my time is devoted to web development.</p>
         </div>
         
         <!-- List of Projects View -->
         
         <div>
-            <picture id="project1">
-                <source src="/images/octadist001.png" media="max-aspect-ratio">
-                <img src="/images/octadist001.png" alt="MDN">
-            </picture>
-            <picture id="project2">
-                <source src="/images/MDS_plot_alltimepts.png" media="max-aspect-ratio">
-                <img src="/images/MDS_plot_alltimepts.png" alt="MDN">
-            </picture>
-            <picture id="project3">
-                <source src="/images/Large_vs_Small.png" media="max-aspect-ratio">
-                <img src="/images/Large_vs_Small.png" alt="MDN">
-            </picture>
-            <picture id="project4">
-                <source src="/images/Wax_Pathway_All_Box_KaKs.tif" media="max-aspect-ratio">
-                <img src="/images/Wax_Pathway_All_Box_KaKs.png" alt="MDN">
-            </picture>
+            <div class="fig">
+                <img id="projectfigure" src="/images/MDS_plot_alltimepts.png" alt="MDN">
+                <p id="figcaption">Principle component analysis</p>
+            </div>
+            <div class="fig">
+                <img id="projectfigure" src="/images/Large_vs_Small.png" alt="MDN">
+                <p id="figcaption">Spread of DE genes</p>
+            </div>    
+            <div class="fig">
+                <img id="projectfigure" src="/images/Wax_Pathway_All_Box_KaKs.png" alt="MDN">
+                <p id="figcaption">Relative mutation rate</p>
+            </div>
+            <div class="fig">
+                <img id="projectfigure" src="/images/octadist001.png" alt="MDN">
+                <p id="figcaption">Octamer Clustering</p>
+            </div>
         </div>
-    <script src="/node_modules/angular/angular.js"></script>
-    <script src="/node_modules/angular-resource/angular-resource.js"></script>
-    <script type="text/javascript" src="/client/js/app.js"></script>
-    <script type="text/javascript" src="/client/js/controllers/projects-controller.js"></script>
     </body>
 </html>
