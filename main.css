@@ -1,83 +1,152 @@
-html {
-    background-color: #e6e9e9;
-    background-image: -webkit-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
-    background-image: linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
-    -webkit-font-smoothing: antialiased;
-}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
 
 body {
-    margin: 0 auto;
-    padding: 2em 2em 4em;
-    max-width: 65%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5em;
-    color: #545454;
-    background-color: #ffffff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    font-weight: 600;
-    line-height: 1.3em;
-    text-align: center;
-}
-
-h2 {
-    margin-top: 1.3em;
-}
-
-a {
-    color: #0083e8;
-}
-
-b, strong {
-    font-weight: 600;
-}
-
-samp {
-    display: none;
-}
-
-img {
-    background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    display: inline;
-    margin: 1.2em auto;
-    max-width: 400px;
-    max-height: 330px;
-}
-
-#profilepicture {
-    background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    display: table-cell;
-    margin: 1.2em auto;
-    max-width: 275px;
-    max-height: 250px;
-}
-
-figcaption {
-    font-weight: 600;
-    position: inherit;
+  padding-bottom: 40px;
+  color: #5a5a5a;
 }
 
 
-#projectfigure {
-    display: block;
-}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
 
-#figcaption {
-    text-align: center;
-}
-
-
-
-.fig {
-    display: inline-block;
-    padding-right: 24px;
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
     
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* PROFILE CONTENT
+------------------------- */
+
+#profileDescription {
+    padding-top: 180px;
+    max-width: 1000px;
+}
+
+#profilePicture {
+    position: relative;
+    width: 270px;
+    bottom: 20px;
+    right: 20px;
+    float: left;
+}
+
+#profileHR {
+    border: 1px solid #000;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+
+#projectTwo #projectFour {
+    text-align: right;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+#logoUBC {
+    position: relative;
+    top: 0;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+.marketing {
+    margin-top: 80px
+}
+
+#imgTwo {
+    height: 340px;
+}
+
+
+
+#profileDesc {
+    font-size: 110%;
 }
