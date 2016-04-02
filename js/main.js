@@ -60,7 +60,7 @@ overlay();
 //On button click, replace cover div with projet description and move
 //image to the left column
 
-$('.hidden').hide();
+$('.hidden').hide(0);
 
 var slideSection = function() {
 
@@ -74,7 +74,7 @@ var slideSection = function() {
 
     function hideActiveSection() {
       $childToShow.removeClass('hidden');
-      $childToHide.fadeOut(500, function() {
+      $childToHide.fadeOut(0, function() {
         $(this).addClass('hidden');
       });
     }
