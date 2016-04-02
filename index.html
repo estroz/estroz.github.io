@@ -4,178 +4,169 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--<link rel="icon" href="/node_modules/bootstrap/favicon.ico">-->
+    <meta name="description" content="Web portfolio">
+    <meta name="author" content="Eric Stroczynski">
+    <link rel="icon" href="images/GitHub-Mark-32px.png">
     <title>WebPort: Eric Stroczynski</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="/node_modules/bootstrap/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <script src="/node_modules/bootstrap/assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/hidden.css" rel="stylesheet">
   </head>
-<!-- NAVBAR
-================================================== -->
   <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">WebPort</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> More <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Sources</a></li>
-                    <li><a href="#">Future Projects</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Websites</li>
-                    <li><a href="http://ubclaunchpad.com" target="blank">UBC Launchpad</a></li>
-                    <li><a href="https://github.com/estroz" target="blank">GitHub</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+
+    <!-- Profile Description and Projects
+    ================================================== -->
+
+    <!-- START PROFILE -->
+<section id="profile-section">
+  <div id="profile-wrapper">
+    <img id="profile-img" class="img-circle" src="images/profile.jpg" alt="Eric Stroczynski">
+    <div id="profile-description">
+      <h2 id="name">Eric Stroczynski</h2>
+      <h3>Junior Software Developer<br>Compter Science Student, UBC</h3>
+      <p id="profile-description-text">I'm a Computer Science student previously a Microbiologist. I've worked with complex data throughout my undergraduate career in life science, thus bringing derived concepts into the development of pragmatic applications was the next natural step. My current objectives are integrating data-driven insights into application design, and developing knowledge of networked application back-end. My projects have mainly focused around assessing transcriptomic data in R using a Linux environment, but now my time is devoted to web development.</p>
+      <div class="link-box">
+        <a href="https://github.com/estroz" target="blank">GitHub</a>
+      </div>
+      <div class="link-box">
+        <a href="http://ubclaunchpad.com" target="blank">UBC Launchpad</a>
       </div>
     </div>
+  </div>
 
+</section>
 
+<!-- END PROFILE -->
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-      
-      <!-- Profile Image and Description -->
-      <div id="profileDescription" class="container-fluid">
-          <div class="row">
-                  <img id="profilePicture" class="img-circle" src="images/profile.jpg" alt="Eric Stroczynski">
-            <h2 id="name">Eric Stroczynski, B.Sc.</h2>
-            <hr id="profileHR">
-            <p id="profileDesc">I'm a Computer Science student previously a Microbiologist. I've worked with complex data throughout my undergraduate career in life science, thus bringing derived concepts into the development of pragmatic applications was the next natural step. My current objectives are integrating data-driven insights into application design, and developing knowledge of networked application back-end. My projects have mainly focused around assessing transcriptomic data in R using a Linux environment, but now my time is devoted to web development.</p>
-          </div>
+<!-- BEGIN FULL PROJECT DESCRIPTIONS -->
+
+<div class="transition-div">
+  <section class="project-section" id="project-one">
+    <div class="project-wrapper">
+      <div class="header-wrapper">
+        <h2>Octomer Clustering<br>
+          Heat Mapping</h2>
       </div>
-
-    <div class="container marketing">
-
-      <!-- 4 columns of text below the carousel -->
-      <div class="row" id="projects">
-          <div class="col-lg-4">
-              <a href="#projectOne"><img class="img-rectangle" src="/images/octadist001_cropped.png" alt="Generic placeholder image" height="160" ></a>
-          <h2>Octamer Clustering</h2>
-              <p>Positional heat mapping of octomeric promoter elements in <em>Vitis vinifera</em></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-            <a href="#projectTwo"><img class="img-rectangle" src="/images/Large_vs_Small.png" alt="Generic placeholder image" height="180"></a>
-          <h2>Spread of DE genes</h2>
-          <p>2-dimensinoal spread of up- and down-regulated genes</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <a href="#projectThree"><img class="img-rectangle" src="/images/Wax_Pathway_All_Box_KaKs.png" alt="Generic placeholder image" height="300"></a>
-          <h2>Relative mutation rate</h2>
-          <p>Nonsynonymous to synonymous mutation rate ratio</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-        
-        <hr class="featurette-divider">
-
-      <div class="row featurette" id="projectOne">
-        <div class="col-md-7" >
-          <h2 class="featurette-heading">Octomer Clustering.<br><span class="text-muted">R and Unix Shell.</span></h2>
-          <p class="lead">Blah Blah heatmaps in R blah.</p>
-        </div>
-          <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="images/octadist001.png" alt="Generic placeholder image" width="400">
+      <div class="project-image-wrapper">
+        <img class="project-image" id="project-img-one" src="images/octadist001.png" alt="octamer distance">
+        <button class="project-button">Explore
+        </button>
       </div>
-        </div>
+    </div>
+  </section>
 
-      <hr class="featurette-divider">
-        
-        <div class="row featurette" id="projectTwo">
-        <div class="col-md-7 col-md-push-7">
-            <div id="projTwoText">
-          <h2 class="featurette-heading">Differentially Expressed Genes.<span class="text-muted">R and Unix Shell.</span></h2>
-          <p class="lead">Blah Blah scatterplots in R blah.</p>
-            </div>
-        </div>
-            <div class="col-md-5 col-md-pull-7">
-          <img id="imgTwo" class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="images/Large_vs_Small.png" alt="Generic placeholder image" width="500" height="400">
-            </div>
+  <section class="project-section hidden">
+    <div class="project-wrapper">
+      <div class="header-wrapper">
+        <h2>Octomer Clustering<br>
+          Heat Mapping</h2>
       </div>
+      <div class="project-description-wrapper-full">
+        <p>Octomeric (8 base pair long) segments of DNA upstream of promoter sites are constructs of interest in eukaryotic genomics as they often contain sequence elements essential for transcription-promoting enzyme binding. These enzymes create RNA which are "translated" into proteins and thus "transcription" is a dogmatic biological process. By generating a database of 4<sup>8</sup> octomeric sequences (every possible combination of 8 nucleotides with the 4 bases A, T, C, and G) and aligning each octomer to
+          <em>Vitis vinifera</em>
+          genetic sequences upstream of respective transcription start sites, we can quantify and visualize which sequences have the highest alignment frequency. Sequences with greater impact on transcription enzyme recruitment may have a higher clustering factor with similar sequences, as can be seen in the resultant heatmaps' rough groups. By correlating highly clustered sequences with octomeric sequences known to enhance promoter element binding, we can extrapolate these data to other cultivars and species related to
+          <em>V. vinifera</em>
+        </p>
 
-      <hr class="featurette-divider">
-        
-        <div class="row featurette" id="projectThree">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Wax pathway mutation rate meta-analysis<br><span class="text-muted">R and Unix Shell.</span></h2>
-          <p class="lead">Blah Blah boxplots in R blah.</p>
-        </div>
-            <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="images/Wax_Pathway_All_Box_KaKs.png" alt="Generic placeholder image" width="390">
-            </div>
       </div>
+      <div class="project-image-wrapper-full">
+        <img class="project-image-full" src="images/octadist001.png" alt="octamer distance">
+      </div>
+    </div>
+  </section>
+</div>
 
-      <hr class="featurette-divider">
+<div class="transition-div">
+  <section class="project-section" id="project-two">
+    <div class="project-wrapper">
+      <div class="header-wrapper">
+        <h2>Differential<br>
+            Gene Expression</h2>
+      </div>
+      <div class="project-image-wrapper">
+        <img class="project-image" id="project-img-two" src="images/Large_vs_Small.png" alt="large vs small berries">
+        <button class="project-button">Explore
+        </button>
+      </div>
+    </div>
+  </section>
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h1>Junior Web Developer.<span class="text-muted">UBC Launchpad.</span></h1>
-          <p class="lead">Our organization builds elegant iOS, Android, and web applications, both for in-house and external projects. Have your idea realized <a href="http://ubclaunchpad.com">here.</a></p>
+  <section class="project-section hidden">
+    <div class="project-wrapper">
+      <div class="header-wrapper">
+        <h2>Differential<br>
+            Gene Expression</h2>
+      </div>
+      <div class="project-description-wrapper-full">
+        <p>Genes are not always constitutively expressed or expessed to the same degree at all times. Expression varies due to environmental stresses and physiological changes. By sampling large and small grape berries from <em>V. vinifera</em> plants and sequencing each samples' total RNA transcript collection, called the <em>transcriptome</em>, we can measure differences in gene expression potentially related to a physical size difference. The four scatter plots to the left track differential gene expression in 4 samplings over the course of 121 days after anthesis, measuring relative (counts per million, logCPM) and absolute (total counts, logFC) expression. Differentially expressed gene points are coloured red; genes with statistically insignificant changes in expression are coloured black. Finding genes involved with berry size differences is of interest because smaller berries have been posited to produce richer wines, as they have a higher skin/flesh ratio; berry skin contains anthocyanins and other pigments, aromatics that give wines their color and some flavors.
+        </p>
+
+      </div>
+      <div class="project-image-wrapper-full">
+        <img class="project-image-full" src="images/Large_vs_Small.png" alt="large vs small berries">
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="transition-div">
+  <section class="project-section" id="project-three">
+    <div class="project-wrapper">
+      <div class="header-wrapper">
+        <h2>Wax pathway<br>
+            meta-analysis</h2>
+      </div>
+      <div class="project-image-wrapper">
+        <img class="project-image" id="project-img-three" src="images/Wax_Pathway_All_Box_KaKs.png" alt="wax synthesis pathway">
+        <button class="project-button">Explore
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-section hidden">
+    <div class="project-wrapper">
+      <div class="header-wrapper">
+        <h2>Wax pathway<br>
+            meta-analysis</h2>
+      </div>
+      <div class="project-description-wrapper-full">
+        <p>The wax synthesis (WS) pathway found in many plants produces waxes and cuticle constituents that protect plants from environmental damage and water loss. Because nearly every plant species contains genetic components related to this pathway, it is thought to be highly important for plant fitness. In order to quantify a degree of evolutionary conservation of WS genes, and thereby pathway function, we can determine the rates of synonymous (K<sub>s</sub>) and nonsynonymous (K<sub>a</sub>) mutations by looking at nucleotide and amino acid substitution rates. Synonymous substitutions denote silent nucleotide sequence mutations, which result in no change to the resulting amino acid (protein) sequence; nonsynonymous substitutions are those that result in amino acid sequence changes. A K<sub>a</sub>/K<sub>s</sub> ratio above 1 indicates a genes' evolutionary movement away from original WS pathway function, perhaps specialization towards another function. By extracting K<sub>a</sub>/K<sub>s</sub> ratios for WS pathway genes and homologs across several plant species closely related to and including <em>V. vinifera</em>, we can compare evolutionary conservation amongst WS pathway genes.
+        </p>
+
+      </div>
+      <div class="project-image-wrapper-full">
+        <img class="project-image-full" src="images/Wax_Pathway_All_Box_KaKs.png" alt="wax synthesis pathway">
+      </div>
+    </div>
+  </section>
+</div>
+
+    <!-- END FULL PROJECT DESCRIPTIONS -->
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="footer-div">
+        <div class="footer-desc">
+          <h2>Junior Web Developer.<span>
+              UBC Launchpad.</span>
+          </h2>
+          <p>Our organization builds elegant iOS, Android, and web applications, both for in-house and external projects. Have your idea realized
+            <a href="http://ubclaunchpad.com">here.</a>
+          </p>
         </div>
-        <div class="col-md-5">
-          <img id="logoUBC" class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="images/logoUBC.gif" alt="Generic placeholder image" width="140">
+        <div class="footer-img-div">
+          <img id="img-ubc" data-src="holder.js/500x500/auto" src="images/logoUBC.gif" alt="Generic placeholder image" width="140">
         </div>
       </div>
+    </footer>
 
-      <!-- /END THE FEATURETTES -->
-        
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/node_modules/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="/node_modules/bootstrap/assets/js/vendor/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/node_modules/bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

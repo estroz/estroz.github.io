@@ -1,0 +1,41 @@
+/* All full project description styles go here
+------------------------------------------------- */
+
+.project-description-wrapper-full {
+  float: right;
+  max-width: 50%;
+}
+
+.project-description-wrapper-full p {
+  font-size: 1.15em;
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50%;
+  top: 50%;
+}
+
+.project-image-full {
+  width: 40%;
+  height: 40%;
+  min-width: 300px;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-100%, -43%);
+  background-color: white;
+  border-width: 0.25em;
+  border-style: solid;
+  border-color: #d8d8d8;
+  padding: 2%;
+  border-radius: 2%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.project-image-full:hover {
+  border-color: #00385a;
+  opacity: 0.5;
+}
