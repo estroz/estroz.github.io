@@ -18,32 +18,6 @@ section {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  section footer {
-    width: 100%;
-    margin: auto;
-  }
-
-  #profile-img {
-    height: 18em;
-    width: 18em;
-    margin-top: 5em;
-    margin-right: 5em;
-    margin-left: 2em;
-    float: left;
-  }
-
-  #profile-wrapper {
-    max-width: 95%;
-  }
-}
-
-@media all and (orientation: portrait) {
-  section footer {
-    width: 100%;
-  }
-}
-
 /* PROFILE CONTENT
 ------------------------------------------------- */
 
@@ -51,7 +25,7 @@ section {
   height: inherit;
   max-height: 762px;
   min-width: 50%;
-  background-image: url('../images/IMG_0115.JPG');
+  background-color: #e9fdff;
 }
 
 .img-circle {
@@ -66,20 +40,20 @@ section {
   margin: auto;
   max-width: 1200px;
   max-height: inherit;
-  background-color: #e9fdff;
   overflow: hidden;
   height: inherit;
-  /*box-sizing: border-box;
-  box-shadow: inset 0 0 40px 25px #FFF;*/
 }
 
 #profile-img {
   position: relative;
-  height: 18em;
-  width: 18em;
+  max-height: 300px;
+  max-width: 300px;
+  height: 30%;
+  width: 30%;
   margin-top: 19%;
-  margin-right: 5em;
-  margin-left: 5em;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-bottom: 50%;
   float: left;
 }
 
@@ -91,15 +65,16 @@ section {
 /* end positioning */
 
 #profile-wrapper p {
-  font-size: 1.15em;
+  /*font-size: 1.15em;*/
+  font-size: 2vw;
   max-width: 90%;
   margin-top: 7.5%;
 }
 #profile-wrapper h2 {
-  font-size: 2.5em;
+  font-size: 4vw;
 }
 #profile-wrapper h3 {
-  font-size: 1.5em;
+  font-size: 2.75vw;
   font-style: italic;
 }
 #profile-description-text {
@@ -108,25 +83,28 @@ section {
 
 #profile-wrapper .link-box {
   display: inline-block;
-  min-width: 50px;
-  min-height: 27px;
+  min-width: 90px;
+  min-height: 50px;
   margin-top: 8%;
-  margin-left: 2.5%;
+  margin-left: 0%;
   margin-right: 2.5%;
   margin-bottom: 13%;
   background-color: #bcf0ff;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 10px 5px #e9fdff;
 }
 
-#profile-wrapper a {
+#profile-wrapper a > p {
+  position: relative;
   margin: 20px;
-  font-size: 1.25em;
+  font-size: 2vw;
 }
 
 #profile-wrapper a:link {
-  color: darkgoldenrod;
+  color: black;
 }
 #profile-wrapper a:visited {
-  color: darkgoldenrod;
+  color: black;
 }
 #profile-wrapper a:hover {
   color: #48b038;
@@ -134,6 +112,8 @@ section {
 #profile-wrapper a:active {
   color: burlywood;
 }
+
+
 
 /* PROJECT CONTENT
 ------------------------------------------------- */
@@ -145,6 +125,7 @@ section {
 .project-section {
   height: 100vh;
   min-height: 820px;
+  max-height: 100vh;
   min-width: 50%;
 }
 
@@ -166,16 +147,21 @@ section {
   top: 11%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2em;
+  font-size: 4vw;
   line-height: 1;
   letter-spacing: -0.02em;
+}
+
+.project-description-wrapper-full {
+  font-size: 2vw;
 }
 
 .project-image {
   width: 40%;
   height: 50%;
-  min-width: 300px;
+  min-width: 15vw;
   max-width: 400px;
+  max-height: 50vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -185,6 +171,7 @@ section {
   border-style: solid;
   border-color: #d8d8d8;
   padding: 2%;
+  /*padding-left: 10%;*/
   border-radius: 2%;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -218,32 +205,39 @@ section {
   color: #bcf0ff;
 }
 
+/* ---------- Media queries --------------- */
 
-/* FOOTER
-------------------------------------------------- */
+@media (min-width: 900px) {
+  #profile-section p {
+    font-size: 1.25em;
+  }
+  #profile-section h2 {
+    font-size: 2em;
+  }
+  #profile-section h3 {
+    font-size: 1.25em;
+  }
+  #profile-section a > p {
+    font-size: 1.15em;
+  }
 
-#img-ubc {
-  display: inline-block;
-  height: 100px;
-  width: 80px;
-  max-height: 100px;
-  max-width: 80px;
+  .project-wrapper h2 {
+    font-size: 2.2em;
+  }
 }
-footer {
-  background-color: #e9fdff;
+
+@media (min-width: 700px) {
+  .project-description-wrapper-full {
+    font-size: 0.9em;
+  }
 }
-.footer-desc {
-  max-width: 80%;
-  margin-left: 5%;
-  margin-right: 2.5%;
-  display: inline-block
-}
-.footer-img-div {
-  margin-top: 2.5%;
-  display: inline-block;
-}
-.footer-div {
-  max-width: 800px;
-  position: relative;
-  margin: auto;
-}
+
+/*@media (max-width: 900px) {
+
+  .project-description-wrapper-full {
+    width: 100vw;
+    height: 50vh;
+    transform: translate(-50%, 50%);
+    font-size: 0.9em;
+  }
+}*/

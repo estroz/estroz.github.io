@@ -7,17 +7,11 @@ var sectionTransition = function() {
   $('.project-section')
   .mouseenter(function() {
       $(this)
-        .css(
-        'backgroundColor',
-         '#e9fdff'
-       );
+        .animate({backgroundColor:'#e9fdff'}, 500);
     })
     .mouseleave(function() {
         $(this)
-          .css(
-          'backgroundColor',
-           'white'
-         );
+        .animate({backgroundColor:'white'}, 500);
       });
 };
 
