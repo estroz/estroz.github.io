@@ -1,158 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Web portfolio">
-    <meta name="author" content="Eric Stroczynski">
-    <link rel="icon" href="images/GitHub-Mark-32px.png">
-    <title>WebPort: Eric Stroczynski</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Web portfolio">
+  <meta name="author" content="Eric Stroczynski">
+  <link rel="icon" href="images/GitHub-Mark-32px.png">
+  <title>WebPort: Eric Stroczynski</title>
 
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/hidden.css" rel="stylesheet">
-  </head>
-  <body>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/hidden.css" rel="stylesheet">
+</head>
 
-    <!-- Profile Description and Projects
+<body>
+
+  <!-- Profile Description and Projects
     ================================================== -->
 
-    <!-- START PROFILE -->
-<section id="profile-section">
-  <div id="profile-wrapper">
-    <img id="profile-img" class="img-circle" src="images/profile.jpg" alt="Eric Stroczynski">
-    <div id="profile-description">
-      <h2 id="name">Eric Stroczynski</h2>
-      <h3>Build and Release Engineer, Bit Stew Systems Inc.<br>Computer Science Student, UBC</h3>
-      <p id="profile-description-text">I'm a Computer Science student previously a Microbiologist. I've worked with complex data throughout my undergraduate career in life science, thus bringing derived concepts into the development of pragmatic applications was the next natural step. My current objectives are integrating data-driven insights into application design, and developing knowledge of networked application back-end. My projects have mainly focused around assessing transcriptomic data in R using a Linux environment.</p>
-      <div class="link-box">
-        <a href="https://github.com/estroz" target="blank"><p>GitHub</p></a>
-      </div>
-      <div class="link-box">
-        <a href="http://ubclaunchpad.com" target="blank"><p>UBC Launchpad</p></a>
-      </div>
-      <div class="link-box">
-        <a href="https://ca.linkedin.com/in/ericstroczynski" target="blank"><p>LinkedIn</p></a>
+  <!-- START PROFILE -->
+  <section id="profile-section">
+    <div id="profile-wrapper">
+      <img id="profile-img" class="img-circle" src="images/profile.jpg" alt="Eric Stroczynski">
+      <div id="profile-description">
+        <h2 id="name">Eric Stroczynski</h2>
+        <h3>Build and Release Engineer, Bit Stew Systems Inc.<br>Computer Science Student, UBC</h3>
+        <p id="profile-description-text">I'm a Computer Science student with a degree in Microbiology under my belt. I've worked with complex data throughout my undergraduate career as a life science researcher, a practice I want to continue and build upon. My current objectives are
+        to empower application users with data-driven insights, learn as much as possible about data science and software development, and contribute to open source software.
+        <br/>
+        <br/>
+        I am in the market for an internship/co-op position for Summer 2017. Contact me at
+        <a href="mailto:ericstroczynski@gmail.com"> ericstroczynski@gmail.com</a>.</p>
+        <div class="link-box">
+          <a href="https://github.com/estroz" target="blank">
+            <p>GitHub</p>
+          </a>
+        </div>
+        <div class="link-box">
+          <a href="http://ubclaunchpad.com" target="blank">
+            <p>UBC Launchpad</p>
+          </a>
+        </div>
+        <div class="link-box">
+          <a href="https://ca.linkedin.com/in/ericstroczynski" target="blank">
+            <p>LinkedIn</p>
+          </a>
+        </div>
       </div>
     </div>
+
+  </section>
+
+  <!-- END PROFILE -->
+
+  <!-- BEGIN FULL PROJECT DESCRIPTIONS -->
+
+  <div class="transition-div">
+    <section class="project-section" id="project-one">
+      <div class="project-wrapper">
+          <h2>Octomer Clustering<br>
+          Heat Mapping</h2>
+        <div class="project-image-wrapper">
+          <img class="project-image" id="project-img-one" src="images/octadist001.png" alt="octamer distance">
+          <button class="project-button">Explore
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section hidden">
+      <div class="project-wrapper">
+          <h2>Octomer Clustering<br>
+          Heat Mapping</h2>
+        <div class="project-description-wrapper-full">
+          <p>Octomeric (8 base pair long) segments of DNA upstream of promoter sites are constructs of interest in eukaryotic genomics as they often contain sequence elements essential for transcription-promoting enzyme binding. These enzymes create RNA
+            which are "translated" into proteins and thus "transcription" is a dogmatic biological process. By generating a database of 4<sup>8</sup> octomeric sequences (every possible combination of 8 nucleotides with the 4 bases A, T, C, and G) and
+            aligning each octomer to <em>Vitis vinifera</em> genetic sequences upstream of respective transcription start sites, we can quantify and visualize which sequences have the highest alignment frequency. Sequences with greater impact on transcription
+            enzyme recruitment may have a higher clustering factor with similar sequences, as can be seen in the resultant heatmaps' rough groups. By correlating highly clustered sequences with octomeric sequences known to enhance promoter element binding,
+            we can extrapolate these data to other cultivars and species related to
+            <em>V. vinifera</em>
+          </p>
+
+        </div>
+        <div class="project-image-wrapper-full">
+          <img class="project-image-full" src="images/octadist001.png" alt="octamer distance">
+        </div>
+      </div>
+    </section>
   </div>
 
-</section>
-
-<!-- END PROFILE -->
-
-<!-- BEGIN FULL PROJECT DESCRIPTIONS -->
-
-<div class="transition-div">
-  <section class="project-section" id="project-one">
-    <div class="project-wrapper">
-      <div class="header-wrapper">
-        <h2>Octomer Clustering<br>
-          Heat Mapping</h2>
-      </div>
-      <div class="project-image-wrapper">
-        <img class="project-image" id="project-img-one" src="images/octadist001.png" alt="octamer distance">
-        <button class="project-button">Explore
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-section hidden">
-    <div class="project-wrapper">
-      <div class="header-wrapper">
-        <h2>Octomer Clustering<br>
-          Heat Mapping</h2>
-      </div>
-      <div class="project-description-wrapper-full">
-        <p>Octomeric (8 base pair long) segments of DNA upstream of promoter sites are constructs of interest in eukaryotic genomics as they often contain sequence elements essential for transcription-promoting enzyme binding. These enzymes create RNA which are "translated" into proteins and thus "transcription" is a dogmatic biological process. By generating a database of 4<sup>8</sup> octomeric sequences (every possible combination of 8 nucleotides with the 4 bases A, T, C, and G) and aligning each octomer to
-          <em>Vitis vinifera</em>
-          genetic sequences upstream of respective transcription start sites, we can quantify and visualize which sequences have the highest alignment frequency. Sequences with greater impact on transcription enzyme recruitment may have a higher clustering factor with similar sequences, as can be seen in the resultant heatmaps' rough groups. By correlating highly clustered sequences with octomeric sequences known to enhance promoter element binding, we can extrapolate these data to other cultivars and species related to
-          <em>V. vinifera</em>
-        </p>
-
-      </div>
-      <div class="project-image-wrapper-full">
-        <img class="project-image-full" src="images/octadist001.png" alt="octamer distance">
-      </div>
-    </div>
-  </section>
-</div>
-
-<div class="transition-div">
-  <section class="project-section" id="project-two">
-    <div class="project-wrapper">
-      <div class="header-wrapper">
-        <h2>Differential<br>
+  <div class="transition-div">
+    <section class="project-section" id="project-two">
+      <div class="project-wrapper">
+          <h2>Differential<br>
             Gene Expression</h2>
+        <div class="project-image-wrapper">
+          <img class="project-image" id="project-img-two" src="images/Large_vs_Small.png" alt="large vs small berries">
+          <button class="project-button">Explore
+          </button>
+        </div>
       </div>
-      <div class="project-image-wrapper">
-        <img class="project-image" id="project-img-two" src="images/Large_vs_Small.png" alt="large vs small berries">
-        <button class="project-button">Explore
-        </button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="project-section hidden">
-    <div class="project-wrapper">
-      <div class="header-wrapper">
-        <h2>Differential<br>
+    <section class="project-section hidden">
+      <div class="project-wrapper">
+          <h2>Differential<br>
             Gene Expression</h2>
-      </div>
-      <div class="project-description-wrapper-full">
-        <p>Genes are not always constitutively expressed or expessed to the same degree at all times. Expression varies due to environmental stresses and physiological changes. By sampling large and small grape berries from <em>V. vinifera</em> plants and sequencing each samples' total RNA transcript collection, called the <em>transcriptome</em>, we can measure differences in gene expression potentially related to a physical size difference. The four scatter plots to the left track differential gene expression in 4 samplings over the course of 121 days after anthesis, measuring relative (counts per million, logCPM) and absolute (total counts, logFC) expression. Differentially expressed gene points are coloured red; genes with statistically insignificant changes in expression are coloured black. Finding genes involved with berry size differences is of interest because smaller berries have been posited to produce richer wines, as they have a higher skin/flesh ratio; berry skin contains anthocyanins and other pigments, aromatics that give wines their color and some flavors.
-        </p>
+        <div class="project-description-wrapper-full">
+          <p>Genes are not always constitutively expressed or expessed to the same degree at all times. Expression varies due to environmental stresses and physiological changes. By sampling large and small grape berries from <em>V. vinifera</em> plants
+            and sequencing each samples' total RNA transcript collection, called the <em>transcriptome</em>, we can measure differences in gene expression potentially related to a physical size difference. The four scatter plots to the left track differential
+            gene expression in 4 samplings over the course of 121 days after anthesis, measuring relative (counts per million, logCPM) and absolute (total counts, logFC) expression. Differentially expressed gene points are coloured red; genes with statistically
+            insignificant changes in expression are coloured black. Finding genes involved with berry size differences is of interest because smaller berries have been posited to produce richer wines, as they have a higher skin/flesh ratio; berry skin
+            contains anthocyanins and other pigments, aromatics that give wines their color and some flavors.
+          </p>
 
+        </div>
+        <div class="project-image-wrapper-full">
+          <img class="project-image-full" src="images/Large_vs_Small.png" alt="large vs small berries">
+        </div>
       </div>
-      <div class="project-image-wrapper-full">
-        <img class="project-image-full" src="images/Large_vs_Small.png" alt="large vs small berries">
-      </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
 
-<div class="transition-div">
-  <section class="project-section" id="project-three">
-    <div class="project-wrapper">
-      <div class="header-wrapper">
-        <h2>Wax pathway<br>
+  <div class="transition-div">
+    <section class="project-section" id="project-three">
+      <div class="project-wrapper">
+          <h2>Wax pathway<br>
             meta-analysis</h2>
+        <div class="project-image-wrapper">
+          <img class="project-image" id="project-img-three" src="images/Wax_Pathway_All_Box_KaKs.png" alt="wax synthesis pathway">
+          <button class="project-button">Explore
+          </button>
+        </div>
       </div>
-      <div class="project-image-wrapper">
-        <img class="project-image" id="project-img-three" src="images/Wax_Pathway_All_Box_KaKs.png" alt="wax synthesis pathway">
-        <button class="project-button">Explore
-        </button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="project-section hidden">
-    <div class="project-wrapper">
-      <div class="header-wrapper">
-        <h2>Wax pathway<br>
+    <section class="project-section hidden">
+      <div class="project-wrapper">
+          <h2>Wax pathway<br>
             meta-analysis</h2>
+        <div class="project-description-wrapper-full">
+          <p>The wax synthesis (WS) pathway found in many plants produces waxes and cuticle constituents that protect plants from environmental damage and water loss. Because nearly every plant species contains genetic components related to this pathway,
+            it is thought to be highly important for plant fitness. In order to quantify a degree of evolutionary conservation of WS genes, and thereby pathway function, we can determine the rates of synonymous (K<sub>s</sub>) and nonsynonymous (K<sub>a</sub>)
+            mutations by looking at nucleotide and amino acid substitution rates. Synonymous substitutions denote silent nucleotide sequence mutations, which result in no change to the resulting amino acid (protein) sequence; nonsynonymous substitutions
+            are those that result in amino acid sequence changes. A K<sub>a</sub>/K<sub>s</sub> ratio above 1 indicates a genes' evolutionary movement away from original WS pathway function, perhaps specialization towards another function. By extracting
+            K<sub>a</sub>/K<sub>s</sub> ratios for WS pathway genes and homologs across several plant species closely related to and including <em>V. vinifera</em>, we can compare evolutionary conservation amongst WS pathway genes.
+          </p>
+
+        </div>
+        <div class="project-image-wrapper-full">
+          <img class="project-image-full" src="images/Wax_Pathway_All_Box_KaKs.png" alt="wax synthesis pathway">
+        </div>
       </div>
-      <div class="project-description-wrapper-full">
-        <p>The wax synthesis (WS) pathway found in many plants produces waxes and cuticle constituents that protect plants from environmental damage and water loss. Because nearly every plant species contains genetic components related to this pathway, it is thought to be highly important for plant fitness. In order to quantify a degree of evolutionary conservation of WS genes, and thereby pathway function, we can determine the rates of synonymous (K<sub>s</sub>) and nonsynonymous (K<sub>a</sub>) mutations by looking at nucleotide and amino acid substitution rates. Synonymous substitutions denote silent nucleotide sequence mutations, which result in no change to the resulting amino acid (protein) sequence; nonsynonymous substitutions are those that result in amino acid sequence changes. A K<sub>a</sub>/K<sub>s</sub> ratio above 1 indicates a genes' evolutionary movement away from original WS pathway function, perhaps specialization towards another function. By extracting K<sub>a</sub>/K<sub>s</sub> ratios for WS pathway genes and homologs across several plant species closely related to and including <em>V. vinifera</em>, we can compare evolutionary conservation amongst WS pathway genes.
-        </p>
+    </section>
+  </div>
 
-      </div>
-      <div class="project-image-wrapper-full">
-        <img class="project-image-full" src="images/Wax_Pathway_All_Box_KaKs.png" alt="wax synthesis pathway">
-      </div>
-    </div>
-  </section>
-</div>
-
-    <!-- END FULL PROJECT DESCRIPTIONS -->
+  <!-- END FULL PROJECT DESCRIPTIONS -->
 
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 
-  </body>
+</body>
+
 </html>

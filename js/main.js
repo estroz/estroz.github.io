@@ -64,7 +64,7 @@ var slideSection = function() {
     var $childToShow = $parentDiv.find('.hidden');
     var $childToHide = $childToShow.siblings('.project-section');
 
-    $childToShow.fadeIn(2000, hideActiveSection());
+    $childToShow.fadeIn(1000, hideActiveSection());
 
     function hideActiveSection() {
       $childToShow.removeClass('hidden');

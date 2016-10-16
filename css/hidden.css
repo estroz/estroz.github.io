@@ -2,28 +2,35 @@
 ------------------------------------------------- */
 
 .project-description-wrapper-full {
+  display: inline-block;
   float: right;
-  max-width: 50%;
+  width: 50%;
+  height: 100%;
 }
 
 .project-description-wrapper-full p {
   font-size: 1.15em;
   max-width: 100%;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 10%;
-  margin-top: 50%;
-  top: 50%;
+  margin-top: 25vh;
+}
+
+.project-image-wrapper-full {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
 }
 
 .project-image-full {
-  width: 40%;
-  height: 40%;
-  min-width: 300px;
-  max-width: 400px;
+  width: 32.5vw;
+  height: 40vw;
+  max-width: 300px;
+  max-height: 400px;
   position: absolute;
   top: 50%;
   left: 46%;
-  transform: translate(-100%, -43%);
+  transform: translate(-100%, -50%);
   background-color: white;
   border-width: 0.25em;
   border-style: solid;
@@ -38,4 +45,48 @@
 .project-image-full:hover {
   border-color: #00385a;
   opacity: 0.5;
+}
+
+/* ---------- Media queries --------------- */
+
+@media (max-width: 700px) {
+  .project-image-wrapper-full {
+    display: inline-block;
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .project-description-wrapper-full {
+    display: inline-block;
+    width: 100vw;
+    height: 40vh;
+    margin-top: 20vh;
+  }
+
+  .project-description-wrapper-full p {
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 0;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+
+  .project-image-full {
+    width: 32.5vw;
+    height: 40vw;
+    max-width: 300px;
+    max-height: 400px;
+    position: absolute;
+    margin: 0;
+    transform: translate(-42.5%, 50%);
+    background-color: white;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: #d8d8d8;
+    padding: 2%;
+    border-radius: 2%;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
 }
