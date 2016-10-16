@@ -6,6 +6,8 @@
   float: right;
   width: 50%;
   height: 100%;
+  margin-top: 25vh;
+
 }
 
 .project-description-wrapper-full p {
@@ -13,7 +15,6 @@
   max-width: 100%;
   margin-left: 5%;
   margin-right: 10%;
-  margin-top: 25vh;
 }
 
 .project-image-wrapper-full {
